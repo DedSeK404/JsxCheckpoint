@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { Pic } from './Component/Profile/ProfilePhoto'
+import { Name } from './Component/Profile/FullName'
+import { Adress } from './Component/Profile/Adress'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='All'>
+{/* Picture Card */}
+        <div className="Pic_container">
+          <Pic whileHover={{ scale: 1.1}} />
+        </div>
+{/* Name Card */}
+        <div className="Name_container">
+          <Name />
+        </div>
+{/* Adress Card */}
+        <div className="Adress_container">
+          <Adress />
+        </div>
+      </div>
+    </>
   );
+
 }
+
 
 export default App;
