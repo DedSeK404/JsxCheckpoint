@@ -1,12 +1,12 @@
 import React from "react";
-import photoImg from "../Profile/fbb.png"
+import photo from "../Profile/PHOTO.jpg"
  
-   const Pic = () => {
+   const Picture = () => {
     return (
       <div>
-      <h1 className="P_title">Profile picture :</h1>
-        <img className="P_img" src={photoImg} alt ='0' />
+      <h1>Profile picture :</h1>
+        <img className="P_img" src={photo} alt ='0' />
       </div>
     );
    };
-   export  {Pic};
+   export  {Picture};
